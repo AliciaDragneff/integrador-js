@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+ 
+
+
+ <!----************************ MENU SUPERIOR ****************************************-->   
+
+
+
+  <nav class="navbar navbar-expand-lg sticky-top text-light bg-dark mb-0 justify-content-between">
+    <div class="container-fluid ">
+      
+      <a class="navbar-brand col-4 ms-3 " href="#"> <img src="./img/codoacodo.png"   class="tamanoLogo" alt=""> <span>Conf. Bs. As.</span></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon " ></span>
+      </button>
+    
+
+
+    <div class=""> 
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+        <ul class="navbar-nav me-auto mb-2   ">
+          <li class="nav-item ps-3 pl-3">
+            <a class="nav-link active link-light fs-5" aria-current="page" href="#">La Conferencia</a>
+          </li>
+          <li class="nav-item ps-3 pl-3">
+            <a class="nav-link link-light  fs-5" href="#oradores">Los oradores</a>
+          </li>
+          <li class="nav-item ps-3 pl-3">
+            <a class="nav-link link-light fs-5" href="#lugarFecha">El lugar y la Fecha</a>
+          </li>
+
+          <li class="nav-item ps-3 pl-3">
+            <a class="nav-link link-light fs-5" href="#conviertete">Conviértete en orador</a>
+          </li>
+          
+          <li class="nav-item ps-3 pl-3">
+            <a class="nav-link  fs-5" href="#" id="comprarTickets">Comprar Tickets  </a>
+          </li>
+
+            </ul>
+          
+      </div>
+
+    </div>
+
+
+
+
+
+    </div>
+  </nav>
+
+<!--------****************** CARDS  ************************-->
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+
+        <div class="card p-0 col-lg-3 col-md-3 m-2 border border-primary align-items-center" >
+        <div class="card-header w-100 text-center bg-primary text-light ">
+           <h4> Estudiante</h4>
+        </div>
+        <div class="card-body text-center">
+            <h5 class="card-title">Tienen un descuento.</h5>
+            <h5 class="card-title fw-bold">80%</h5>
+            <p>*presentar documentación</p>
+        </div>
+        </div>
+
+        <div class="card p-0 col-lg-3 col-md-3 m-2 border border-success   align-items-center"  >
+            <div class="card-header  w-100 text-center bg-success text-light">
+                <h4>Trainee</h4>
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Tienen un descuento.</h5>
+                <h5 class="card-title fw-bold">50%</h5>
+                <p>*presentar documentación</p>
+            </div>
+            </div>
+
+            <div class="card p-0 col-lg-3 col-md-3 m-2 border border-warning   align-items-center" >
+                <div class="card-header w-100 text-center bg-warning text-light">
+                   <h4>Junior</h4> 
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tienen un descuento.</h5>
+                    <h5 class="card-title fw-bold">15%</h5>
+                    <p>*presentar documentación</p>
+                </div>
+                </div>
+        
+        
+
+</div>
+</div>
+
+
+
+<!---*********************** FORMULARIO ****************************** --->
+
+
+<div class="container d-flex justify-content-center" >
+
+  <div class=" col-xl-8 col-lg-8 col-md-8 col-sm-12 mb-5 ">
+  
+    <div class="row mb-4 mt-4" id="conviertete">  
+      <div class="text-center">VENTA </div>
+    <h1 class="text-center">VALOR DE TICKET $ 200</h1> 
+    
+
+    
+    </div> 
+
+    <form id="miFormulario">
+      <div class="row ">
+        <div class="  col">
+          <input id= "nombre" type="text" class="form-control " placeholder="Nombre">
+          <div  id= "mensajeNombre" class="text-danger"></div>
+        </div>
+        <div class="col">
+          <input type="text"  id = "apellido" class="form-control" placeholder="Apellido">
+          <div  id= "mensajeApellido" class="text-danger"></div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col mt-4" >
+        <input type="text"  id = "email" class="form-control" placeholder="Correo">  
+        <div id = "mensajeEmail" class="text-danger"></div>   
+      </div>
+    </div>
+
+      <div class="row ">
+        <div class="col md-2">
+            <div class = "mt-2 mb-2"><label for="Cantidad">Cantidad</label></div>
+          <input type="number"  id="cantidad" class="form-control  " placeholder="Cantidad" >
+          <div id = "mensajeCantidad" class="text-danger"></div>
+        </div>
+        <div class="col">
+            <div class = "mt-2 mb-2"><label for="Categoria">Categoría</label></div>
+            
+            <select name="Estudiante" id="categoria"  class="form-select">Categoria
+
+              <option value="0">Ninguna</option>
+              <option value="0.8">Estudiante</option>
+              <option value="0.5">Trainee</option>
+              <option value="0.15">Junior</option>
+           
+            </select>
+                
+        </div>
+      </div>
+
+
+      <div  row  id="mensajeTotal" class="mt-2  pt-4 pb-4 border-info rounded-3 colorMensajeTotal"> Total a pagar en $ :  </div>
+      
+      <div class="row">
+        
+       
+        <div class="col ps-3 pe-3 mt-4">
+          <button id="limpiar" type="button" class="btn btn-lg btn-form  text-light w-100 colorBotonesCompar">
+            Borrar
+          </button>  </div>
+
+          <div class="col mt-4">
+            <button id="enviar" type="button" class="btn btn-lg  text-light w-100 colorBotonesCompar">
+              Resumen
+            </button>  </div>
+      </div>
+
+      
+    
+    
+    
+    
+
+    </form>
+     
+  </div>
+
+</div>
+
+
+<!-- ****************    Menú Pié  ********************                  -->
+
+<div class="container-fluid  p-3 colorPie">
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container-fluid ">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      
+      
+      <div class="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
+
+        <ul class="navbar-nav  mb-2 mb-lg-0 w-75 justify-content-between fs-5">
+          <li class="nav-item">
+            <a class="nav-link active link-light " aria-current="page" href="#">Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Conferencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Términos y Condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="#">Estudiantes</a>
+          </li>
+          
+          
+        </ul>
+
+      </div>
+</div>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<!-- Mis Scripts -->
+<script src="./scripts.js"></script>
+</body>
+</html>
