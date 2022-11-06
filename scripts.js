@@ -77,22 +77,20 @@ function validarEmail() {
 
 function limpiarFormulario() {
    document.getElementById("miFormulario").reset();
+   mensajeTotal.innerHTML = " <span class='' > Total a pagar en $ </span>";
+   mensajeEmail.innerHTML = "";
+   mensajeNombre.innerHTML = "";
+   mensajeApellido.innerHTML = "";
+
  }
 
 
-/*function validarCantidad() {
-   if (inputCantidad.value == 0) {
-      mensajeCantidad.innerHTML = "Ingrese una Cantidad Por favor";
-   }
-   else {
-       mensajeCantidad.innerHTML = "Cantidad correcta!!";
-   }
-}*/
+
 
 botonEnviar.addEventListener("click", validarNombre);
 botonEnviar.addEventListener("click", validarApellido);
 botonEnviar.addEventListener("click", validarEmail);
-//botonEnviar.addEventListener("click", validarCantidad);
+
 
 
 botonEnviar.addEventListener("click", calcularDescuento);
