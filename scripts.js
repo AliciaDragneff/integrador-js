@@ -50,28 +50,37 @@ function mostrarTotal() {
 
 function validarNombre() {
    if (inputNombre.value.length < 3) {
-      mensajeNombre.innerHTML = "Ingrese un nombre válido";
+      mensajeNombre.innerHTML = "Ingrese un nombre válido"; 
+  
    }
+
    else {
-       mensajeNombre.innerHTML = "Nombre correcto!!";
+       mensajeNombre.innerHTML = "<div class='text-success'>Nombre correcto!!</div>"; 
+       
    }
 }
 
 function validarApellido() {
    if (inputApellido.value.length < 3) {
       mensajeApellido.innerHTML = "Ingrese un Apellido válido";
+      
+          
    }
    else {
-       mensajeApellido.innerHTML = "Apellido correcto!!";
+       mensajeApellido.innerHTML = "<div class='text-success'>Apellido correcto!! </div>";
+       
+      
    }
 }
 
 function validarEmail() {
    if (!expRegular.test(inputEmail.value)) {
        mensajeEmail.innerHTML = "El email no es valido";
+       
+      
    }
    else {
-       mensajeEmail.innerHTML = "Email correcto";
+       mensajeEmail.innerHTML = "<div class='text-success'>Email correcto</div>";
    }
 }
 
@@ -91,10 +100,10 @@ botonEnviar.addEventListener("click", validarNombre);
 botonEnviar.addEventListener("click", validarApellido);
 botonEnviar.addEventListener("click", validarEmail);
 
-
-
 botonEnviar.addEventListener("click", calcularDescuento);
 botonEnviar.addEventListener("click", mostrarTotal);
+
+
 botonLimpiar.addEventListener("click", limpiarFormulario);
 
 
